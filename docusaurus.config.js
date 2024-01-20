@@ -20,12 +20,12 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'XinyuuM', // Usually your GitHub org/user name.
+  projectName: 'all-alone-blog', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -72,46 +72,56 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '服务',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Coco巡查姬',
+                href: 'https://status.cocomoe.cn',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '联系方式',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+          
             ],
           },
+          
           {
-            title: 'More',
+            title: '文档许可',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Creativecommons',
+                href: 'https://creativecommons.org/'
+
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '署名-非商业性-相同方式共享',
+                href: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
               },
+            
             ],
+            
+            
+          },
+          {
+            title: '备案信息',
+            items: [
+              {
+                label: '萌ICP备20242444号',
+                href: 'https://icp.gov.moe/?keyword=20242444',
+              },
+            
+            ],
+            
+            
+          },
+          {
+            
+            
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} allalone`,
       },
       prism: {
         theme: prismThemes.github,
