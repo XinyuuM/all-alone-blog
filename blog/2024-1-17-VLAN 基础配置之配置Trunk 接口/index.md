@@ -1,4 +1,5 @@
 ---
+slug: vlan-set-switch-trunk
 title: VLAN 基础配置之配置Trunk 接口
 authors: [jianlang]
 tags: [VLAN,实验,交换机]

@@ -1,5 +1,5 @@
 ---
-slug: VLAN 基础配置和配置Access 接口
+slug: vlan-set-switch-access
 title: VLAN 基础配置和配置Access 接口
 authors: [jianlang]
 tags: [VLAN,实验,交换机]

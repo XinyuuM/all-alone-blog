@@ -1,5 +1,5 @@
 ---
-slug: IPv4 静态路由基础实验
+slug: static-router-test
 title: IPv4 静态路由基础实验
 authors: [jianlang]
 tags: [静态路由,实验]

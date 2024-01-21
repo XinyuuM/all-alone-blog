@@ -1,4 +1,5 @@
 ---
+slug: vlan-set-switch-hybrid
 title: VLAN 基础配置之理解Hybrid 接口
 authors: [jianlang]
 tags: [VLAN,实验,交换机]
