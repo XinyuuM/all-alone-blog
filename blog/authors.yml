@@ -1,5 +1,13 @@
+#请不要随意修改该文件的内容。
+
 jianlang:
   name: all-alone
-  title: Administrator
+  title: Administrator  
   url: https://space.bilibili.com/21977351
-  image_url: https://static.xinyuu.info/static/all-alone.jpg
+  image_url: https://static.cocomoe.cn/img/allalone-face.jpg 
+
+xinyu:
+ name: Xinyuu
+ title: Administrator
+ url: https://space.bilibili.com/142202292
+ imge_url: https://static.cocomoe.cn/img/xinyuu-face.jpg
