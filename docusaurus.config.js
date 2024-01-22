@@ -39,7 +39,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
+        docs: {
+          sidebarPath: './sidebars.js',
+        },
         blog: {
           showReadingTime: true,
           routeBasePath: '/',
@@ -68,7 +70,13 @@ const config = {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
-        items: [        ],
+        items: [
+          {
+            position: 'left',
+            to: '/docs/about',
+            label: '关注公众号',
+          },
+        ],
       },
       footer: {
         style: 'dark',
