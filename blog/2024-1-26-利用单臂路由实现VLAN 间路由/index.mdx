@@ -86,70 +86,76 @@ tags: [VLAN,实验,单臂路由]
 ### 创建VLAN并配置Access、Trunk接口
 
 #### S2的配置代码
+```
 
-[S2]`vlan 10`
+[S2]vlan 10
 
-[S2-vlan10]`vlan 20`
+[S2-vlan10]vlan 20
 
-[S2-vlan20]`interface Ethernet 0/0/1`
+[S2-vlan20]interface Ethernet 0/0/1
 
-[S2-Ethernet0/0/1]`port link-type access`
+[S2-Ethernet0/0/1]port link-type access
 
-[S2-Ethernet0/0/1]`port default vlan 10`
+[S2-Ethernet0/0/1]port default vlan 10
 
-[S2-Ethernet0/0/1]`interface Ethernet 0/0/2`
+[S2-Ethernet0/0/1]interface Ethernet 0/0/2
 
-[S2-Ethernet0/0/2]`port link-type access`
+[S2-Ethernet0/0/2]port link-type access
 
-[S2-Ethernet0/0/2]`port default vlan 20`
+[S2-Ethernet0/0/2]port default vlan 20
 
-[S2]`interface GigabitEthernet 0/0/2`
+[S2]interface GigabitEthernet 0/0/2
 
-[S2-GigabitEthernet0/0/2]`port link-type trunk`
+[S2-GigabitEthernet0/0/2]port link-type trunk
 
-[S2-GigabitEthernet0/0/2]`port trunk allow-pass vlan all`
-
+[S2-GigabitEthernet0/0/2]port trunk allow-pass vlan all
+```
 
 #### S3的配置代码
 
+```
+[S3]vlan 30
 
-[S3]vlan 30[S3-vlan30]`interface Ethernet 0/0/1`
+[S3-vlan30]interface Ethernet 0/0/1
 
-[S3-Ethernet0/0/1]`port link-type access`
+[S3-Ethernet0/0/1]port link-type access
 
-[S3-Ethernet0/0/1]`port default vlan 30`
+[S3-Ethernet0/0/1]port default vlan 30
 
-[S3]`interface GigabitEthernet 0/0/2`
+[S3]interface GigabitEthernet 0/0/2
 
-[S3-GigabitEthernet0/0/2]`port link-type trunk`
+[S3-GigabitEthernet0/0/2]port link-type trunk
 
-[S3-GigabitEthernet0/0/2]`port trunk allow-pass vlan all`
+[S3-GigabitEthernet0/0/2]port trunk allow-pass vlan all
+```
 
 #### S1的配置代码
 
-[S1]`vlan 10`
+```
+[S1]vlan 10
 
-[S1-vlan10]`vlan 20`
+[S1-vlan10]vlan 20
 
-[S1-vlan20]`vlan 30`
+[S1-vlan20]vlan 30
 
-[S1-vlan30]`interface GigabitEthernet 0/0/2`
+[S1-vlan30]interface GigabitEthernet 0/0/2`
 
-[S1-GigabitEthernet0/0/2]`port link-type trunk`
+[S1-GigabitEthernet0/0/2]port link-type trunk
 
-[S1-GigabitEthernet0/0/2]`port trunk allow-pass vlan all`
+[S1-GigabitEthernet0/0/2]port trunk allow-pass vlan all
 
-[S1-GigabitEthernet0/0/2]`interface GigabitEthernet 0/0/3`
+[S1-GigabitEthernet0/0/2]interface GigabitEthernet 0/0/3
 
-[S1-GigabitEthernet0/0/3]`port link-type trunk`
+[S1-GigabitEthernet0/0/3]port link-type trunk`
 
-[S1-GigabitEthernet0/0/3] `port trunk allow-pass vlan all`
+[S1-GigabitEthernet0/0/3]port trunk allow-pass vlan all
 
-[S1-GigabitEthernet0/0/3]`interface GigabitEthernet 0/0/1`
+[S1-GigabitEthernet0/0/3]interface GigabitEthernet 0/0/1
 
-[S1-GigabitEthernet0/0/1]`port link-type trunks`
+[S1-GigabitEthernet0/0/1]port link-type trunks
 
-[S1-GigabitEthernet0/0/1]`port trunk allow-pass vlan all`
+[S1-GigabitEthernet0/0/1]port trunk allow-pass vlan all
+```
 
 
 
@@ -159,43 +165,48 @@ tags: [VLAN,实验,单臂路由]
 2. 在 R1 上创建子接口 GE 0/0/1.2，配置 IP 地址 192.168.2.254/24,作为市场部网关地址。
 3. 在 R1 上创建子接口 GE 0/0/1.3，配置 IP 地址 192.168.3.254/24,作为经理网关地址。
 
-[R1]`interface GigabitEthernet 0/0/1.1`
+```
+[R1]interface GigabitEthernet 0/0/1.1
 
-[R1-GigabitEthernet0/0/1.1]`ip address 192.168.1.254 24`
+[R1-GigabitEthernet0/0/1.1]ip address 192.168.1.254 24
 
-[R1]`interface GigabitEthernet 0/0/1.2`
+[R1]interface GigabitEthernet 0/0/1.2
 
-[R1-GigabitEthernet0/0/1.2]`ip address 192.168.2.254 24`
+[R1-GigabitEthernet0/0/1.2]ip address 192.168.2.254 24
 
-[R1]`interface GigabitEthernet 0/0/1.3`
+[R1]interface GigabitEthernet 0/0/1.3
 
-[R1-GigabitEthernet0/0/1.3]`ip address 192.168.3.254 24`
-
+[R1-GigabitEthernet0/0/1.3]ip address 192.168.3.254 24
+```
 ### 配置路由器子接口封装VLAN
 
 在R1的子接口GE 0/0/1.1 上封装VLAN 10，在子接口GE 0/0/1.2上封装VLAN 20，在子接口GE 0/0/1.3上封装VLAN 30，并开启子接口的ARP 广播功能。
 
 使用arp broadcast enable 命令开启子接口的ARP 广播功能。如果不配置该命令，将会导致该子接口无法主动发送ARP广播报文，以及向外转发IP报文。
+```
 
-[R1]`interface GigabitEthernet 0/0/1.1`
+[R1]interface GigabitEthernet 0/0/1.1
 
-[R1-GigabitEthernet0/0/1.1]`dot1q termination vid 10`
+[R1-GigabitEthernet0/0/1.1]dot1q termination vid 10
 
-[R1-GigabitEthernet0/0/1.1]`arp broadcast enable`
+[R1-GigabitEthernet0/0/1.1]arp broadcast enable
+```
 
 同理配置R1的子接口GE 0/0/1.2 和GE 0/0/1.3。
+```
 
-[R1]`interface GigabitEthernet 0/0/1.2`
+[R1]interface GigabitEthernet 0/0/1.2
 
-[R1-GigabitEthernet0/0/1.2]`dot1q termination vid 20`
+[R1-GigabitEthernet0/0/1.2]dot1q termination vid 20
 
-[R1-GigabitEthernet0/0/1.2]`arp broadcast enable`
+[R1-GigabitEthernet0/0/1.2]arp broadcast enable
 
-[R1]`interface GigabitEthernet 0/0/1.3`
+[R1]interface GigabitEthernet 0/0/1.3
 
-[R1-GigabitEthernet0/0/1.3]`dot1q termination vid 30`
+[R1-GigabitEthernet0/0/1.3]dot1q termination vid 30
 
-[R1-GigabitEthernet0/0/1.3]`arp broadcast enable`
+[R1-GigabitEthernet0/0/1.3]arp broadcast enable
+```
 
 ## 测试结果
 
