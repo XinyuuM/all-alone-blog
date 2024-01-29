@@ -8,12 +8,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'alone的博客',
-  tagline: 'Dinosaurs are cool',
+  title: 'HCIA Lab/HCIA实验室',
+  tagline: 'The HCIA Lab',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://all-alone.cocomoe.cn',
+  url: 'https://hcia.cocomoe.cn',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -65,7 +65,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'alon的博客',
+        title: 'HCIA Lab',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -131,7 +131,7 @@ const config = {
             
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} allalone`,
+        copyright: `Copyright © ${new Date().getFullYear()} allalone/HCIALab/CocomoeDocsTeam`,
       },
       prism: {
         theme: prismThemes.github,
