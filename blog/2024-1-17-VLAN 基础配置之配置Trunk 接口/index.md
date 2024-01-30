@@ -51,20 +51,36 @@ VLAN 传输：trunk 端口可以传输多个 VLAN 的数据。它使用 VLAN 标
 
 公司内网需要通过VLAN 的划分来隔离不同的部门，需要在3台交换机S1、S2、S3上都分别创建VLAN10和VLAN 20，研发部员工属于VLAN10，市场部员工属于VLAN20。
 ```
-[s1]vlan batch 10 20[s2]vlan batch 10 20[s3]vlan batch 10 20
+[s1]vlan batch 10 20
+
+[s2]vlan batch 10 20
+
+[s3]vlan batch 10 20
 ```
 ### 配置 access 接口
 
 在S1 上配置E 0/0/2 和E 0/0/3 为Access 接口，并划分到相应的VLAN
 
 ```
-[s1-Ethernet0/0/2]port link-type access[s1-Ethernet0/0/2]port default vlan 10[s1-Ethernet0/0/3]port link-type access[s1-Ethernet0/0/3]port default vlan 20
+[s1-Ethernet0/0/2]port link-type access
+
+[s1-Ethernet0/0/2]port default vlan 10
+
+[s1-Ethernet0/0/3]port link-type access
+
+[s1-Ethernet0/0/3]port default vlan 20
 ```
 
 在S2 上配置E 0/0/3 和E 0/0/4 为Access 接口，并划分到相应的VLAN。
 
 ```
-[s2-Ethernet0/0/3]port link-type access[s2-Ethernet0/0/3]port default vlan 10[s2-Ethernet0/0/4]port link-type access[s2-Ethernet0/0/4]port default vlan 20
+[s2-Ethernet0/0/3]port link-type access
+
+[s2-Ethernet0/0/3]port default vlan 10
+
+[s2-Ethernet0/0/4]port link-type access
+
+[s2-Ethernet0/0/4]port default vlan 20
 ```
 
 ### 配置 trunk 接口
@@ -75,20 +91,36 @@ VLAN 传输：trunk 端口可以传输多个 VLAN 的数据。它使用 VLAN 标
 
 
 ```
-[s1]int eth 0/0/1[s1-Ethernet0/0/1]port link-type trunk[s1-port-group-link-type]port trunk allow-pass  vlan 10 20
+[s1]int eth 0/0/1[s1-Ethernet0/0/1]port link-type trunk
+
+[s1-port-group-link-type]port trunk allow-pass  vlan 10 20
 ```
 
 在S2上配置E 0/0/2为Trunk 接口，允许VLAN 10 和VLAN20通过
 
 
 ```
-[s2]int eth 0/0/2[s2-Ethernet0/0/2]port link-type trunk[s2-Ethernet0/0/2]port trunk allow-pass  vlan 10 20
+[s2]int eth 0/0/2
+
+[s2-Ethernet0/0/2]port link-type trunk
+
+[s2-Ethernet0/0/2]port trunk allow-pass  vlan 10 20
 ```
 
 在S3上配置GE 0/0/1 和GE 0/0/2 为Trunk 接口，允许所有VLAN 通过
 
 ```
-[s3]int g 0/0/1[s3-GigabitEthernet0/0/1]port link-type trunk[s3-GigabitEthernet0/0/1]port trunk allow-pass  vlan 10 20[s3-GigabitEthernet0/0/1]int g 0/0/2[s3-GigabitEthernet0/0/2]port link-type trunk[s3-GigabitEthernet0/0/2]port trunk allow-pass vlan 10 20
+[s3]int g 0/0/1
+
+[s3-GigabitEthernet0/0/1]port link-type trunk
+
+[s3-GigabitEthernet0/0/1]port trunk allow-pass  vlan 10 20
+
+[s3-GigabitEthernet0/0/1]int g 0/0/2
+
+[s3-GigabitEthernet0/0/2]port link-type trunk
+
+[s3-GigabitEthernet0/0/2]port trunk allow-pass vlan 10 20
 ```
 ### 查看trunk 配置情况
 

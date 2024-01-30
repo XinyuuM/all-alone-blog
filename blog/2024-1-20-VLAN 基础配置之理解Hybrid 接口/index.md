@@ -65,7 +65,9 @@ Hybrid 接口的设计使得华为交换机可以更灵活地适应各种网络�
 **创建 vlan**
 
 ```
-[s1]vlan batch 10 20 30[s2]vlan batch 10 20 30
+[s1]vlan batch 10 20 30
+
+[s2]vlan batch 10 20 30
 ```
 
 **配置 hybrid**
@@ -81,6 +83,7 @@ port link-type hybrid
 S1的配置
 
 ```
+
 [s1]int Eth 0/0/1
 
 [S1-Ethernet0/0/1]port hybrid tagged vlan 10 20
@@ -96,6 +99,7 @@ S1的配置
 [S1-Ethernet0/0/3]port hybrid untagged vlan 10
 
 [S1-Ethernet0/0/3]port hybrid pvid vlan 10
+
 ```
 
 S2的配置
