@@ -81,13 +81,41 @@ port link-type hybrid
 S1的配置
 
 ```
-[s1]int Eth 0/0/1[S1-Ethernet0/0/1]port hybrid tagged vlan 10 20[s1]int Eth 0/0/2[S1-Ethernet0/0/2]port hybrid untagged vlan 20[S1-Ethernet0/0/2]port hybrid pvid vlan 20[s1]int Eth 0/0/3[S1-Ethernet0/0/3]port hybrid untagged vlan 10[S1-Ethernet0/0/3]port hybrid pvid vlan 10
+[s1]int Eth 0/0/1
+
+[S1-Ethernet0/0/1]port hybrid tagged vlan 10 20
+
+[s1]int Eth 0/0/2
+
+[S1-Ethernet0/0/2]port hybrid untagged vlan 20
+
+[S1-Ethernet0/0/2]port hybrid pvid vlan 20
+
+[s1]int Eth 0/0/3
+
+[S1-Ethernet0/0/3]port hybrid untagged vlan 10
+
+[S1-Ethernet0/0/3]port hybrid pvid vlan 10
 ```
 
 S2的配置
 
 ```
-[S2]int Eth 0/0/1[S2-Ethernet0/0/1]port hybrid tagged vlan 10 20[s2]int Eth 0/0/2[S2-Ethernet0/0/2]port hybrid untagged vlan 20[S2-Ethernet0/0/2]port hybrid pvid vlan 20[S2]int Eth 0/0/3[S2-Ethernet0/0/3]port hybrid untagged vlan 10[S2-Ethernet0/0/3]port hybrid pvid vlan 10
+[S2]int Eth 0/0/1
+
+[S2-Ethernet0/0/1]port hybrid tagged vlan 10 20
+
+[s2]int Eth 0/0/2
+
+[S2-Ethernet0/0/2]port hybrid untagged vlan 20
+
+[S2-Ethernet0/0/2]port hybrid pvid vlan 20
+
+[S2]int Eth 0/0/3
+
+[S2-Ethernet0/0/3]port hybrid untagged vlan 10
+
+[S2-Ethernet0/0/3]port hybrid pvid vlan 10
 ```
 
 配置完成后，使用display vlan命令查看使用Hybrid配置下接口和VLAN的对应关系。
@@ -108,13 +136,39 @@ S2的配置
 S1的配置
 
 ```
-[S1]int Eth 0/0/4[S1-Ethernet0/0/4]port hybrid pvid vlan 30[S1-Ethernet0/0/4]port hybrid untagged vlan 10 20 30[S1]int Eth 0/0/2[S1-Ethernet0/0/2]port hybrid untagged vlan 20 30[S1]int Eth 0/0/3[S1-Ethernet0/0/3]port hybrid untagged vlan 10 30[S1]int Eth 0/0/1[S1-Ethernet0/0/1]port hybrid tagged vlan 10 20 30
+[S1]int Eth 0/0/4
+
+[S1-Ethernet0/0/4]port hybrid pvid vlan 30
+
+[S1-Ethernet0/0/4]port hybrid untagged vlan 10 20 30
+
+[S1]int Eth 0/0/2
+
+[S1-Ethernet0/0/2]port hybrid untagged vlan 20 30
+
+[S1]int Eth 0/0/3
+
+[S1-Ethernet0/0/3]port hybrid untagged vlan 10 30
+
+[S1]int Eth 0/0/1
+
+[S1-Ethernet0/0/1]port hybrid tagged vlan 10 20 30
 ```
 
 S2的配置
 
 ```
-[S2]int Eth 0/0/1[S2-Ethernet0/0/1]port hybrid tagged vlan 10 20 30[S2]int Eth 0/0/2[S2-Ethernet0/0/2]port hybrid untagged vlan 20 30[S2]int Eth 0/0/3[S2-Ethernet0/0/3]port hybrid untagged vlan 10 30
+[S2]int Eth 0/0/1
+
+[S2-Ethernet0/0/1]port hybrid tagged vlan 10 20 30
+
+[S2]int Eth 0/0/2
+
+[S2-Ethernet0/0/2]port hybrid untagged vlan 20 30
+
+[S2]int Eth 0/0/3
+
+[S2-Ethernet0/0/3]port hybrid untagged vlan 10 30
 ```
 
 ## 结果验证
@@ -125,7 +179,11 @@ S2的配置
 
 ![图片](8.png)
 
-在交换机上可以定义多个 VLAN，每个 VLAN 都可以看做是一个广播域，通常情况下每个 VLAN 都会分配一个独立的 IP 网络，根据需要把相应主机所在的接口划入到指定的 VLAN 中，并配置相应的网络 IP 地址，VLAN 间通过路由来实现互相访问。这是较为常用的方法。但是相比于基于端口的 Hybrid 配置，三层路由方式则不够灵活，原因在于 VLAN 之间的访问控制要借助于路由设备来实现。而控制 VLAN 访问使用 Hybrid 接口则极大地简化了配置的复杂性，它仅需在端口上自主定义基于 VLAN Tag 的过滤规则，来决定指定的 VLAN 的二层帧是否允许发送;它是通过二层来实现 VLAN 间的访问控制，既不需要每个 VLAN 定义单独的 IP 网段，更不需要在 VLAN 间引入路由设备，配置更为灵活方便。
+在交换机上可以定义多个 VLAN，每个 VLAN 都可以看做是一个广播域，通常情况下每个 VLAN 都会分配一个独立的 IP 网络，根据需要把相应主机所在的接口划入到指定的 VLAN 中，并配置相应的网络 IP 地址，VLAN 间通过路由来实现互相访问。
+
+这是较为常用的方法。但是相比于基于端口的 Hybrid 配置，三层路由方式则不够灵活，原因在于 VLAN 之间的访问控制要借助于路由设备来实现。
+
+而控制 VLAN 访问使用 Hybrid 接口则极大地简化了配置的复杂性，它仅需在端口上自主定义基于 VLAN Tag 的过滤规则，来决定指定的 VLAN 的二层帧是否允许发送;它是通过二层来实现 VLAN 间的访问控制，既不需要每个 VLAN 定义单独的 IP 网段，更不需要在 VLAN 间引入路由设备，配置更为灵活方便。
 
 
 
