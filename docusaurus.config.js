@@ -73,8 +73,8 @@ const config = {
         items: [
           {
             position: 'left',
-            to: '/docs/about',
-            label: '关注公众号',
+            to: '/docs/',
+            label: '文档库',
           },
         ],
       },
