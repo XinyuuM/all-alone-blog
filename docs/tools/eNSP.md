@@ -1,8 +1,9 @@
 ---
 title: eNSP模拟器
+sidebar_position: 1
 ---
 
-**是一款由华为提供的、可扩展的、图形化操作的网络仿真工具平台**
+**一款由华为提供的、可扩展图形化操作网络仿真工具平台**。
 
 ## 特点
 
@@ -26,3 +27,11 @@ title: eNSP模拟器
 ## 获取eNSP
 
 百度网盘：https://pan.baidu.com/s/1wiXSiV0cL-WCvyei65_H4Q?pwd=f99x
+
+:::warning 警告：
+
+在执行安装程序之前请确保您的设备中没有安装[**完美世界竞技平台**](https://pvp.wanmei.com)。
+
+eNSP无法与该应用共存：在您启动网络设备时将会造成致命错误。
+
+:::
