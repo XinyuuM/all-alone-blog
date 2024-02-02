@@ -82,18 +82,12 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '服务',
+            title: '文档',
             items: [
               {
-                label: 'Coco巡查姬',
-                href: 'https://status.cocomoe.cn',
+                label: 'Cocomoe：收支一览',
+                href: 'https://www.cocomoe.cn/blackboard/topic/tp233/',
               },
-            ],
-          },
-          {
-            title: '联系方式',
-            items: [
-          
             ],
           },
           
@@ -131,7 +125,7 @@ const config = {
             
           },
         ],
-        copyright: `本网站使用免费开源的 Docusaurus 程序制作。网站所涉及的公司名称、商标、产品等均为其各自所有者的资产，仅供识别。`,
+        copyright: `HCIALab/Allalone/Cocomoe`,
       },
       prism: {
         theme: prismThemes.github,

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 :::tip
 
-章中的部分文字可能会由GPT生成。
+部分文字可能会由GPT生成。
 
 :::
 

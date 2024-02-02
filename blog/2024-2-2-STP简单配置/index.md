@@ -80,7 +80,7 @@ display stp
 
 ![](2.png)
 
-还可以使用display stp brief命令`S1`、`S2`、`S3`、`S4` 上仅查看摘要信息
+还可以使用`display stp brief`命令`S1`、`S2`、`S3`、`S4` 上仅查看摘要信息
 
 ```
 display stp brief
