@@ -28,6 +28,21 @@ sidebar_position: 1
 
 百度网盘：https://pan.baidu.com/s/1wiXSiV0cL-WCvyei65_H4Q?pwd=f99x
 
+:::tip
+
+已包含
+
+- VirtualBox5.2.44-139111
+- WiresharkX64_v3.2.4.0
+- WinPcap4.1.3
+- eNSP V100R003C00SPC100（eNSP本体）
+- CE（网络设备仿真镜像）
+- USG6000V（设备补丁包）
+
+如果您在安装或使用的过程中出现错误，请尝试使用压缩包内提供的工具。
+
+:::
+
 :::warning 警告：
 
 在执行安装程序之前请确保您的设备中没有安装[**完美世界竞技平台**](https://pvp.wanmei.com)。

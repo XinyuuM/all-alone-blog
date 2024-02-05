@@ -7,6 +7,6 @@ sidebar_position: 4
 
 :::warning
 
-暂不提供相关应用的[下载](https://www.cocomoe.cn/blackboard/datacom/64243/方式。
+暂不提供相关应用的[下载](https://www.cocomoe.cn/blackboard/datacom/64243)方式。
 
 :::

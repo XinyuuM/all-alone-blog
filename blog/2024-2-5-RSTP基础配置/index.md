@@ -1,8 +1,19 @@
+---
+slug: rstp-set
+title: RSTP基础配置
+authors: [jianlang]
+tags: [RSTP,STP,实验,交换机]
+---
+
+
+
 ## 实验介绍
 
 **RSTP**
 
 RSTP（Rapid Spanning Tree Protocol）是一种快速生成和收敛的二层网络冗余协议，是 IEEE 802.1w 标准定义的一种 Spanning Tree Protocol（STP）的改进版本。
+
+<!--truncate-->
 
 RSTP 的主要目标是提供更快的收敛时间，以便在网络发生拓扑变化时更快地恢复和重新计算最短路径树。相比传统的 STP 协议，RSTP 的收敛时间更短，网络恢复更迅速。
 
