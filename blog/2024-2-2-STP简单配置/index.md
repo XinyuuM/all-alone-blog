@@ -110,6 +110,7 @@ display stp brief
 
 ```
 [S1]stp priority 0
+
 [S2]stp priority 4096
 ```
 
