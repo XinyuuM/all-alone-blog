@@ -90,6 +90,10 @@ const config = {
                 label: 'Cocomoe：收支一览',
                 href: 'https://www.cocomoe.cn/blackboard/topic/tp233/',
               },
+              {
+                label: '留言箱',
+                href: 'https://www.wjx.cn/vm/OhIxqSE.aspx'
+              },
             ],
           },
           
