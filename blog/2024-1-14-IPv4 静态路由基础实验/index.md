@@ -178,6 +178,7 @@ Loopback接口的主要用途有：
 
 **ip route-static 目标网段+子网掩码+下一跳地址**
 
+```
 [R1]ip route-static 10.0.1.2 32 10.0.12.2 
 
 [R1]ip route-static 10.0.1.3 32 10.0.13.3
@@ -189,6 +190,7 @@ Loopback接口的主要用途有：
 [R3]ip route-static 10.0.1.1 32 10.0.13.1 
 
 [R3]ip route-static 10.0.1.2 32 10.0.23.2
+```
 
 **测试联通性**
 
@@ -198,9 +200,13 @@ Loopback接口的主要用途有：
 
 **配置 R1->R3->R2 作为 R1 的 LoopBack0 到 R2 的 LoopBack0 接口的备份路径 # 配置 R1 和 R2 上的静态路由**
 
+```
 [R1]ip route-static 10.0.1.2 32 10.0.13.3 preference 100
 
 [R2]ip route-static 10.0.1.1 32 10.0.23.3 preference 100
+```
+
+
 
 ## **查看 R1 和 R2 上的路由表**
 

@@ -1,7 +1,7 @@
 ---
 slug: vlan-set-switch-access
 title: VLAN 基础配置和配置Access 接口
-authors: [jianlang]
+authors: [jianlang,xinyu]
 tags: [VLAN,实验,交换机]
 ---
 ##  实验介绍:
@@ -73,15 +73,30 @@ Access 接口是指网络设备（如交换机）上用于连接终端设备的�
 ![图片](3.png)
 其他主机间互相通信测试和上述相同，略过。
 ### 创建 vlan
-默认自带 vlan1，其余 vlan 需要命令手工创建，有两个办法⼀种是使⽤vlan 命令创建单个，另一种是用 vlan batch 命令创建多个
-![图片](4.png)
-配置完成后可以使用 display vlan 查看 vlan 信息
+系统默认分配 vlan1给所有端口，您需要手动新建VLAN。
+
+- 使⽤vlan [id]命令创建。
+
+- 使用 vlan batch [id] 批量创建。
+
+
+
+```
+[S1]vl 10#或者，您可以使用batch命令一次创建多个VLAN
+[S1]vlan b 20 30 40 #此处的 batch 可以缩写成 b
+```
+
+
+配置完成后可以使用 `display vlan` 查看 vlan 信息
 ![图片](5.png)
 ![图片](6.png)
+
 ### 配置 access 接口
-按照我给出的拓扑，使用 port link-type access 命令，连接 PC（终端）的接口为 access 类型接口，并使用 port default vlan 命令来加入相应的 vlan 中
-默认情况下，所有接口默认是 vlan 1
+连接 PC（终端）的接口必须为 `access` 类型接口。并使用 `port default vlan` 命令来加入相应的 vlan 中。
+默认情况下，所有接口默认是 `vlan 1`
+
 ![图片](7.png)
+
 ### 配置完成后可以查看 S1 和 S2 上的 vlan 信息
 ![图片](8.png)
 ![图片](9.png)

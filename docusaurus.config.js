@@ -118,8 +118,8 @@ const config = {
             title: '备案信息',
             items: [
               {
-                label: '萌ICP备20242444号',
-                href: 'https://icp.gov.moe/?keyword=20242444',
+                label: '萌ICP备20249960号',
+                href: 'https://icp.gov.moe/?keyword=20249960',
               },
             
             ],
