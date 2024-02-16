@@ -535,7 +535,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置完成后可以查看-s1-和-s2-上的-vlan-信息">配置完成后可以查看 S1 和 S2 上的 vlan 信息<a href="https://hcia.cocomoe.cn/vlan-set-switch-access#%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90%E5%90%8E%E5%8F%AF%E4%BB%A5%E6%9F%A5%E7%9C%8B-s1-%E5%92%8C-s2-%E4%B8%8A%E7%9A%84-vlan-%E4%BF%A1%E6%81%AF" class="hash-link" aria-label="配置完成后可以查看 S1 和 S2 上的 vlan 信息的直接链接" title="配置完成后可以查看 S1 和 S2 上的 vlan 信息的直接链接">​</a></h3>
 <p><img loading="lazy" alt="图片" src="https://hcia.cocomoe.cn/assets/images/8-2e02af00bd1e9bb362eab836eaa03c28.png" width="1080" height="644" class="img_ev3q">
 <img loading="lazy" alt="图片" src="https://hcia.cocomoe.cn/assets/images/9-0efaddbbc96e7c8383203a9f9dc2fadd.png" width="1080" height="675" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="检查配置结果">检查配置结果<a href="https://hcia.cocomoe.cn/vlan-set-switch-access#%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E7%BB%93%E6%9E%9C" class="hash-link" aria-label="检查配置结果的直接链接" title="检查配置结果的直接链接">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="检查配置结果">检查配置结果<a href="https://hcia.cocomoe.cn/vlan-set-switch-access#%E6%A3%80%E6%9F%A5%E9%85%8D%E7%BD%AE%E7%BB%93%E6%9E%9C" class="hash-link" aria-label="检查配置结果的直接链接" title="检�查配置结果的直接链接">​</a></h2>
 <p><img loading="lazy" alt="图片" src="https://hcia.cocomoe.cn/assets/images/10-8aba8d0d7263a98898c4539401f6ceb6.png" width="781" height="533" class="img_ev3q"></p>
 <p>在交换机上将不同接口加入各自不同的 VLAN 中后，属于相同 VLAN 的接口处于同一个广播域，相互之间可以直接通信。属于不同 VLAN 的接口是处于不同的广播域，相互之间不能直接通信。</p>]]></content:encoded>
             <category>VLAN</category>
