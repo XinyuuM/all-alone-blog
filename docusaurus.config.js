@@ -69,7 +69,7 @@ const config = {
       navbar: {
         title: 'HCIA Lab',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'hcialab',
           src: 'img/logo.svg',
         },
         items: [
