@@ -83,19 +83,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: '文档',
-            items: [
-              {
-                label: 'Cocomoe：收支一览',
-                href: 'https://www.cocomoe.cn/blackboard/topic/tp233/',
-              },
-              {
-                label: '留言箱',
-                href: 'https://www.wjx.cn/vm/OhIxqSE.aspx'
-              },
-            ],
-          },
           
           {
             title: '文档许可',
@@ -121,7 +108,13 @@ const config = {
                 label: '萌ICP备20249960号',
                 href: 'https://icp.gov.moe/?keyword=20249960',
               },
-            
+            {
+              html: `
+              <a href="https://www.cocomoe.cn" target="_blank">
+                <img src="https://img.shields.io/badge/Support%20-CCC?label=CocoMoe&labelColor=00ccff" />
+              </a>
+            `,
+            },
             ],
             
             
@@ -131,7 +124,7 @@ const config = {
             
           },
         ],
-        copyright: `HCIALab/Allalone/Cocomoe`,
+        copyright: `HCIALab/Allalone`,
       },
       prism: {
         theme: prismThemes.github,
