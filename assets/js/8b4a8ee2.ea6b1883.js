@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[3578],{7066:a=>{a.exports=JSON.parse('{"label":"Smart Link","permalink":"/tags/smart-link","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[8107],{1449:l=>{l.exports=JSON.parse('{"label":"Monitor Link","permalink":"/tags/monitor-link","allTagsPath":"/tags","count":1,"unlisted":false}')}}]);
