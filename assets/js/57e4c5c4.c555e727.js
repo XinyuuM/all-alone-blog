@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[3345],{2332:a=>{a.exports=JSON.parse('{"label":"Smart Link","permalink":"/hcia/tags/smart-link","allTagsPath":"/hcia/tags","count":1,"unlisted":false}')}}]);

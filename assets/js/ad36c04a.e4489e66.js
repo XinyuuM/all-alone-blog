@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[6698],{8571:e=>{e.exports=JSON.parse('{"permalink":"/tags/mstp","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
