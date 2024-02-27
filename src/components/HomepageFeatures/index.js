@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'FREE🎉',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        你可以随时查阅这些实验文档，免费！
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '协助编辑',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        发现错误?现在您只需掌握最基本的Git命令与Markdown语法便可参与到我们的编辑中来。审核通过后，您的署名将会出现在文档头部。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '转载与再次创作',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        我们遵循CC-BY-NC-SA 创作协议。 您可以任意地共享、在此基础之上修改。只要您遵守许可协议条款，我们就无法收回你的权利。
       </>
     ),
   },

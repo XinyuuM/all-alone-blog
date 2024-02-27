@@ -8,12 +8,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'HCIA Lab/HCIA实验室',
-  tagline: 'The HCIA Lab',
+  title: '小白的网络之路',
+  tagline: 'Datacom Developer Network',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://hcia.cocomoe.cn',
+  url: 'https://ddn.org.cn',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -44,7 +44,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          routeBasePath: '/',
           postsPerPage: 4,
           blogSidebarCount: 'ALL',
           // Please change this to your repo.
@@ -62,21 +61,34 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      googleAdsense: {
+        dataAdClient: 'ca-pub-6550660867966230',
+      },
       
 
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'HCIA Lab',
+        title: 'Datacom Developer Network',
         logo: {
-          alt: 'hcialab',
+          alt: 'DDN',
           src: 'img/logo.svg',
         },
         items: [
           {
             position: 'left',
-            to: '/docs/',
-            label: '文档库',
+            to: '/hcia',
+            label: 'HCIA',
+          },
+          {
+            position: 'right',
+            to: '/docs/category/tools',
+            label: '工具库',
+          },
+          {
+            position: 'right',
+            to: '/docs#关注公众号',
+            label: '公众号',
           },
         ],
       },
@@ -87,14 +99,13 @@ const config = {
           {
             title: '文档许可',
             items: [
+              
               {
-                label: 'Creativecommons',
-                href: 'https://creativecommons.org/'
-
-              },
-              {
-                label: '署名-非商业性-相同方式共享',
-                href: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans',
+                html: `
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank">
+                <img src="https://static.cocomoe.cn/static/licenses/by-nc-sa.png"  width="117" height="41" />
+              </a>
+                `
               },
             
             ],
@@ -124,7 +135,7 @@ const config = {
             
           },
         ],
-        copyright: `HCIALab/Allalone`,
+        copyright: `Datacom Developer Network/Allalone`,
       },
       prism: {
         theme: prismThemes.github,
@@ -133,6 +144,25 @@ const config = {
 
 
     }),
+
+    plugins: [
+      [
+        '@docusaurus/plugin-content-blog',
+        {
+          showReadingTime: true,
+          postsPerPage: 4,
+          blogSidebarCount: 'ALL',
+          id: 'hcia',
+          routeBasePath: 'hcia',
+          path: './hcia',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+      ],
+      'docusaurus-plugin-google-adsense',
+      
+    ],
+    
 };
 
 export default config;
