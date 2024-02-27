@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[1830],{2662:a=>{a.exports=JSON.parse('{"permalink":"/hcia/tags/vlan/page/2","page":2,"postsPerPage":4,"totalPages":2,"totalCount":5,"previousPage":"/hcia/tags/vlan","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

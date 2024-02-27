@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[1980],{5941:a=>{a.exports=JSON.parse('{"permalink":"/hcia/tags/\u4ea4\u6362\u673a","page":1,"postsPerPage":4,"totalPages":2,"totalCount":8,"nextPage":"/hcia/tags/\u4ea4\u6362\u673a/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
