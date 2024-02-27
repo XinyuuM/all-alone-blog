@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ddn.org.cn/hcia</id>
-    <title>数通开发者网络 Blog</title>
+    <title>小白的网络之路 Blog</title>
     <updated>2024-02-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ddn.org.cn/hcia"/>
-    <subtitle>数通开发者网络 Blog</subtitle>
+    <subtitle>小白的网络之路 Blog</subtitle>
     <icon>https://ddn.org.cn/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[配置Eth-Trunk 链路聚合]]></title>
