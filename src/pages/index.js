@@ -28,12 +28,72 @@ function HomepageHeader() {
     </header>
   );
 }
+function TopBanner() {
+  /* TODO restore Ukraine banner after launch
+    <Translate
+        id="homepage.banner"
+        values={{
+          link: (
+            <Link to="https://opensource.facebook.com/support-ukraine">
+              <Translate id="homepage.banner.link">
+                Help Provide Humanitarian Aid to Ukraine
+              </Translate>
+            </Link>
+          ),
+        }}>
+        {'Support Ukraine 🇺🇦 {link}.'}
+      </Translate>
+   */
+  return (
+    <div className={styles.topBanner}>
+      <div className={styles.topBannerTitle}>
+        {'🎉\xa0'}
+        <Link to="/blog/releases/3.0" className={styles.topBannerTitleText}>
+          <Translate id="homepage.banner.launch.3.0">
+            {'Docusaurus\xa03.0 is\xa0out!️'}
+          </Translate>
+        </Link>
+        {'\xa0🥳'}
+      </div>
+      {/*
+      <div style={{display: 'flex', alignItems: 'center', flexWrap: 'wrap'}}>
+        <div style={{flex: 1, whiteSpace: 'nowrap'}}>
+          <div className={styles.topBannerDescription}>
+            We are on{' '}
+            <b>
+              <Link to="https://www.producthunt.com/posts/docusaurus-2-0">
+                ProductHunt
+              </Link>{' '}
+              and{' '}
+              <Link to="https://news.ycombinator.com/item?id=32303052">
+                Hacker News
+              </Link>{' '}
+              today!
+            </b>
+          </div>
+        </div>
+        <div
+          style={{
+            flexGrow: 1,
+            flexShrink: 0,
+            padding: '0.5rem',
+            display: 'flex',
+            justifyContent: 'center',
+          }}>
+          <ProductHuntCard />
+          <HackerNewsIcon />
+        </div>
+      </div>
+      */}
+    </div>
+  );
+}
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`茵蒂克丝`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

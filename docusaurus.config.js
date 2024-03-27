@@ -83,12 +83,17 @@ const config = {
           {
             position: 'right',
             to: '/docs/category/tools',
-            label: '工具库',
+            label: '工具箱',
           },
           {
             position: 'right',
             to: '/docs#关注公众号',
             label: '公众号',
+          },
+          {
+            position: 'right',
+            href: 'https://www.yuque.com/atxinyuu/internet-surfboard',
+            label: '语雀智库',
           },
         ],
       },
@@ -121,7 +126,7 @@ const config = {
               },
             {
               html: `
-              <a href="https://www.cocomoe.cn" target="_blank">
+              <a href="https://www.cocomoe.cn/pay/donate" target="_blank">
                 <img src="https://img.shields.io/badge/Support%20-CCC?label=CocoMoe&labelColor=00ccff" />
               </a>
             `,
@@ -156,7 +161,7 @@ const config = {
           routeBasePath: 'hcia',
           path: './hcia',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://www.yuque.com/atxinyuu/internet-surfboard/',
         },
       ],
       'docusaurus-plugin-google-adsense',

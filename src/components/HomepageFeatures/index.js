@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        发现错误?现在您只需掌握最基本的Git命令与Markdown语法便可参与到我们的编辑中来。审核通过后，您的署名将会出现在文档头部。
+        发现错误?现在您只需掌握最基本的Markdown语法便可参与到我们的编辑中来。审核通过后，您的署名将会出现在文档头部。
       </>
     ),
   },

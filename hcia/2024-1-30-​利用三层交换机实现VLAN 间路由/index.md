@@ -1,5 +1,5 @@
 ---
-slug: three-tier-switch-vlan
+slug: bx61ns911ubehyfk
 title: 利用三层交换机实现VLAN 间路由
 authors: [jianlang]
 tags: [VLAN,实验,交换机]
