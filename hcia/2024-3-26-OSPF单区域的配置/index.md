@@ -1,5 +1,5 @@
 ---
-title: OSPF多区域的配置
+title: OSPF单区域的配置
 slug: zkl0b6ktakqxq9r3
 authors: [jianlang]
 tags: [OSPF]

@@ -160,8 +160,6 @@ const config = {
           id: 'hcia',
           routeBasePath: 'hcia',
           path: './hcia',
-          editUrl:
-            'https://www.yuque.com/atxinyuu/internet-surfboard/',
         },
       ],
       'docusaurus-plugin-google-adsense',
