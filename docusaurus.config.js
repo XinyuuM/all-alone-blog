@@ -118,6 +118,22 @@ const config = {
             
           },
           {
+            title: '关注我们',
+            items: [
+              
+              {
+                html: `
+               
+                <img src="https://static.cocomoe.cn/img/wx-gh.png"  width="100%" height="100%" />
+              
+                `
+              },
+            
+            ],
+            
+            
+          },
+          {
             title: '备案信息',
             items: [
               {
