@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[7176],{5367:e=>{e.exports=JSON.parse('{"permalink":"/hcia/tags/rip","page":1,"postsPerPage":4,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

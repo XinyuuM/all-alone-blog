@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[329],{8993:a=>{a.exports=JSON.parse('{"label":"MSTP","permalink":"/hcia/tags/mstp","allTagsPath":"/hcia/tags","count":1,"unlisted":false}')}}]);
