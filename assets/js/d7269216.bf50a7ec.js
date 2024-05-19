@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[8540],{56:e=>{e.exports=JSON.parse('{"permalink":"/hcia","page":1,"postsPerPage":4,"totalPages":6,"totalCount":23,"nextPage":"/hcia/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
