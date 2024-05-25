@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[9157],{2272:a=>{a.exports=JSON.parse('{"tag":{"label":"RSTP","permalink":"/hcia/tags/rstp","allTagsPath":"/hcia/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/hcia/tags/rstp","page":1,"postsPerPage":4,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

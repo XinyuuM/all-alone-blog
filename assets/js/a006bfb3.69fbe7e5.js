@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[2855],{9703:a=>{a.exports=JSON.parse('{"tag":{"label":"RIP","permalink":"/hcia/tags/rip","allTagsPath":"/hcia/tags","count":2,"unlisted":false},"listMetadata":{"permalink":"/hcia/tags/rip","page":1,"postsPerPage":4,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

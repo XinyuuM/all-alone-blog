@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkall_alone=self.webpackChunkall_alone||[]).push([[8058],{4287:a=>{a.exports=JSON.parse('{"label":"OSPF","permalink":"/hcia/tags/ospf","allTagsPath":"/hcia/tags","count":5,"unlisted":false}')}}]);
